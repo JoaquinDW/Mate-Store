@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap');
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+   
+}
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    z-index: 100;
+    
+}
+.container-header{
+    max-width: 1250px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0px 20px;
+    background: white;
+
+    transition: all 300ms;
+}
+.container-nav{
+    position: relative;
+    height: 100%;
+}
+.nav-text{
+    margin-top: 28px;
+    height: 100%;
+}
+nav{
+    height: 100%;
+
+}
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a{
+    color: #373737;
+    font-size: 14px;
+    text-decoration: none;
+}
+nav ul li{
+    margin: 0px 20px;
+    list-style: none;
+}
+
+
+.select{
+    background-color: #89A67F;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
+}
+.nav-mod{
+    height: 70px;
+    box-shadow: 1px 1px 10px 0px #00000010;
+    background: #fff;
+}
+
+
+/* COVER */
+.cover{
+    width: 100%;
+    padding-bottom: 60px;
+    margin-top: 150px;
+}
+.container-cover{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.cover h1{
+    max-width: 400px;
+    font-size: 60px;
+    color: #678D58;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+.cover .container-info{
+    max-width: 400px;
+    margin-top: 40px;
+    z-index: 2;
+}
+.cover h3{
+    font-size: 40px;
+}
+.cover input {
+    padding: 10px 40px;
+    margin-top: 40px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background: #89A67F;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    cursor: pointer;
+    transition: box-shadow 500ms;
+}
+.cover input:hover{
+    box-shadow: 1px 1px 30px -5px #20202090;
+}
+.container-img{
+    position: relative;
+}
+.container-img img{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 30rem;
+    animation: move-vector 6s ease-in-out infinite;
+}
+@keyframes move-vector{
+    0%{
+        transform: translateY(10px);
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+/* CARDS */
+.container-cards{
+    max-width: 1200px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    z-index: 1;
+    align-items: center;
+    gap: 2px;
+}
+.card{
+    gap: 1px;
+}
+.card img{
+    max-width: 200px;
+    height: fit-content;
+    margin-left: 70px;
+    transition: box-shadow .3s;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.card:hover{
+    box-shadow: 1px 1px 20px -5px #373737;
+    transition: 300ms;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.card-body img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.card-text{
+    font-size: 17px;
+}
+
+.btn-primary{
+    background: #57744C;
+    border: none;
+}
+
+.btn-primary:hover{
+    background: #374134;
+}
+.btn-primary:focus{
+    background: #374134;
+    margin: #fff;
+    outline: #fff;
+    border-color: #fff;
+}
+
+/* FORM */
+.container-form{
+    max-width: 1200px;
+    margin-left: 80px;
+}
+
+/* Shape */
+.custom-shape-divider-bottom-1649112656 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1649112656 svg {
+    position: relative;
+    display: block;
+    width: calc(165% + 1.3px);
+    height: 163px;
+}
+
+.custom-shape-divider-bottom-1649112656 .shape-fill {
+    fill: #759B6A;
+}
+
+/* CARRITO */
+.carrito{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.btn-carrito{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+ height: 3rem;
+ width: 3rem;
+}
+
+/* FOOTER */
+.container-footer{
+text-align: center;
+}
